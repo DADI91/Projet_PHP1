@@ -15,5 +15,5 @@
  </head>
  <body class="p-3 mb-2 text-white">
  <?php
-    
+    include 'View/nav_index.php';
  ?>

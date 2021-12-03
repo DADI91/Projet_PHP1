@@ -13,10 +13,10 @@ if(isset($_POST['connexion'])){
             $Pseudo = htmlentities($_POST['login'], ENT_QUOTES, "ISO-8859-1");
             $MotDePasse = htmlentities($_POST['password'], ENT_QUOTES, "ISO-8859-1");
 
-            $servername = 'localhost:8889';
+            $servername = 'db';
             $username = 'root';
-            $password = 'root';
-            $db_name = 'Projet_PHP';
+            $password = 'example';
+            $db_name = 'ProjetPHP';
             
             //On établit la connexion
             $mysqli = mysqli_connect($servername, $username, $password, $db_name);
