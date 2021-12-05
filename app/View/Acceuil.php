@@ -24,6 +24,8 @@
 <?php
 
 
+    //$req1 = "SELECT DATE( NOW() )as date;";
+    //$reponse1 = mysqli_query($mysqli ,$req1);
 
     echo "<table class='' border='0' width= 45% > ";
     echo "<tr>";
