@@ -21,7 +21,7 @@ if(isset($_POST['connexion'])){
             //On établit la connexion
             $mysqli = mysqli_connect($servername, $username, $password, $db_name);
 
-           
+
             if(!$mysqli){
                 echo "il y a une erreur de connexion avec la base de données";
             } else{
@@ -40,6 +40,7 @@ if(isset($_POST['connexion'])){
                     $_SESSION['typeProfil'] = $ligne['TYPE_COMPTE'];
 
                     if($_SESSION['typeProfil'] == 1){
+                        //echo $_SESSION['typeProfil'];
                         header("Location: Acceuil.php");
                     }elseif($_SESSION['typeProfil'] == 2){
                         header("Location: Acceuil.php");

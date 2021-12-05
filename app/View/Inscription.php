@@ -35,8 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     
     }
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -71,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                         </div>
                         <!-- Login Form -->
                         <article class="card-body">
-                            <form method="POST" action="Inscription.php">
+                            <form method="POST" action="">
                                 <div class="form-row">
                                     <div class="col form-group">
                                         <label>USER</label>  
