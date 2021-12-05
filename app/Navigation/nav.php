@@ -30,7 +30,7 @@
                     Compte
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="liste_Compte.php">liste des comptes</a>
+                        <a class="dropdown-item" href="../View/compte.php">liste des comptes</a>
                         
 
                 </div>
