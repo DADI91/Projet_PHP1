@@ -11,7 +11,7 @@
                     POST
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="../View/Post.php">posts</a>
+                    <a class="dropdown-item" href="../View/afficherpost.php">posts</a>
                     <a class="dropdown-item" href="../View/Post.php">Ajouter un post</a>
                 </div>
             </li>
