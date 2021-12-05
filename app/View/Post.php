@@ -26,10 +26,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
        
         $req1 = "SELECT DATE( NOW() )as date;";
         $reponse1 = mysqli_query($mysqli ,$req1);
+        $DatePublication = date('Y-m-d'); 
 
         if ($reponse1){
             $req = "INSERT INTO Post(images, Titre, Contenu, Auteur, DatePublication, ID_USER) 
-			VALUES('".$Images."','".$Titre."','".$Contenu."','".$Auteur."','".$ligne['date']."','".$_SESSION['user']."')";
+			VALUES('".$Images."','".$Titre."','".$Contenu."','".$Auteur."','".$DatePublication."','".$_SESSION['user']."')";
 
             mysqli_query($mysqli, $req) or die('Erreur SQL !'.$req.'<br>'.mysqli_error($mysqli));
 
