@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $DatePublication = date('Y-m-d'); 
 
         if ($reponse1){
-            $req = "INSERT INTO Post(images, Titre, Contenu, Auteur, DatePublication, ID_USER) 
+            $req = "INSERT INTO Post(images, Titre, Contenu, Auteur, Date, ID_USER) 
 			VALUES('".$Images."','".$Titre."','".$Contenu."','".$Auteur."','".$DatePublication."','".$_SESSION['user']."')";
 
             mysqli_query($mysqli, $req) or die('Erreur SQL !'.$req.'<br>'.mysqli_error($mysqli));
